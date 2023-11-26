@@ -1,0 +1,13 @@
+@use "variable" as variable;
+
+.btn {
+    background: variable.$BrightRed;
+    padding: 0.6rem 2rem;
+    border-radius: 1.5rem;
+    color: variable.$body-background;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
