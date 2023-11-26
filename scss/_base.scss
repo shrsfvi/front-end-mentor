@@ -1,4 +1,4 @@
-@use "variable" as variable;
+@use "_variables" as variable;
 
 body{
     background-color:variable.$body-background ;
@@ -15,7 +15,7 @@ body{
     box-shadow: 1px 0px 49px -12px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 1px 0px 49px -12px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 1px 0px 49px -12px rgba(0, 0, 0, 0.75);
-    background-color: variable.$VeryLightGray;
+    background-color: variable.$body-background;
 
     & .hamburger-menu {
         display: none;
