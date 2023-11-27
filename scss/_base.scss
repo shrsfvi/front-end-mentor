@@ -39,14 +39,14 @@ body{
 
 
     & h1 {
-        color: hsl(228, 39%, 23%);
+        color: variable.$h-color;
         font-weight: 700;
 
     }
 
     & p {
         margin-top: 2rem;
-        color: hsl(227, 12%, 61%);
+        color: variable.$text-color;
         font-size: 13px;
     }
 
@@ -59,12 +59,12 @@ body{
     position: absolute;
 
     & h3 {
-        color: hsl(228, 39%, 23%);
+        color: variable.$h-color;
     }
 
     & p {
         margin-top: 2rem;
-        color: hsl(227, 12%, 61%);
+        color: variable.$text-color;
         font-size: 13px;
     }
 }
@@ -76,14 +76,14 @@ body{
     padding-right: 15%;
 
     & h5 {
-        color: hsl(228, 39%, 23%);
+        color:variable.$h-color;
         padding: 10px 0 0 4rem;
 
     }
 
     & p {
         margin-top: 1rem;
-        color: hsl(227, 12%, 61%);
+        color: variable.$text-color;
         padding-left: 4rem;
         padding-bottom: 2rem;
     }
@@ -91,8 +91,8 @@ body{
 
 
 .span {
-    background-color: hsl(12, 88%, 59%);
-    color: whitesmoke;
+    background-color: variable.$BrightRed;
+    color: variable.$body-background;
     padding: 10px 20px;
     border-radius: 20px;
     position: absolute;
@@ -102,15 +102,15 @@ body{
 .comments-header {
     text-align: center;
     font-size: 30px;
-    color: hsl(228, 39%, 23%);
+    color: variable.$h-color;
     margin-top: 8rem;
 }
 
 .comments {
-    /*avatar kheili ziba nemiad bala*/
+    
     text-align: center;
     font-size: 30px;
-    color: hsl(228, 39%, 23%);
+    color: variable.$h-color;
     margin-top: 8rem;
     display: flex;
 
@@ -124,12 +124,12 @@ body{
 
     & p {
         font-size: 13px;
-        color: hsl(227, 12%, 61%);
+        color: variable.$text-color;
         margin-top: 2rem;
     }
 
     .ali {
-        background-color: rgb(253, 249, 243);
+        background-color: variable.$body-background;
         border-radius: 20px;
         padding: 50px;
 
@@ -144,14 +144,14 @@ body{
     }
 
     .Anisha {
-        background-color: rgb(253, 249, 243);
+        background-color: variable.$body-background;
         border-radius: 20px;
         padding: 50px;
         margin-right: 5rem;
     }
 
     .richard {
-        background-color: rgb(253, 249, 243);
+        background-color: variable.$body-background;
         border-radius: 20px;
         padding: 50px;
         margin-left: 5rem;
@@ -166,9 +166,8 @@ body{
     .start-btn {
         border-radius: 20px;
         padding: 10px 23px;
-        color: whitesmoke;
-        background-color: hsl(12, 88%, 59%);
-        box-shadow: hsl(12, 89%, 53%);
+        color: variable.$body-background;
+        background-color: variable.$BrightRed;
         margin-left: 48%;
         margin-top: 2rem;
     }
@@ -178,8 +177,8 @@ body{
 
 .teamworks {
     height: 10rem;
-    background-color: hsl(12, 88%, 59%);
-    color: whitesmoke;
+    background-color: variable.$BrightRed;
+    color: variable.$body-background;
     font-size: 25px;
     font-weight: 700;
     margin-top: 8rem;
@@ -195,8 +194,8 @@ body{
     .start-btn-white {
         border-radius: 20px;
         padding: 10px 23px;
-        color: hsl(12, 88%, 59%);
-        background-color: whitesmoke;
+        color: variable.$BrightRed;
+        background-color: variable.$body-background;
         font-size: 13px;
         margin-left: 75rem;
         margin-top: 3.5rem;
@@ -211,14 +210,14 @@ body{
 
 
 footer {
-    background-color: hsl(233, 12%, 13%);
-    color: whitesmoke;
+    background-color: variable.$VeryDarkBlue;
+    color: variable.$body-background;
     font-weight: 300;
     width: 100%;
 
     & .logo {
         margin-bottom: 50px;
-        color: white !important;
+        color: variable.$body-background !important;
         padding: 50px 10%;
     }
 }
@@ -234,7 +233,7 @@ footer {
 
 
     & :hover {
-        fill: hsl(12, 88%, 59%);
+        fill: variable.$BrightRed;
     }
 
     .footer-content {
@@ -252,7 +251,7 @@ footer {
 }
 
  .input {
-    background-color: whitesmoke;
+    background-color: variable.$body-background;
     padding: 10px 30px;
     border-radius: 20px;
     float: right;
@@ -261,8 +260,8 @@ footer {
 }
 
 .go-btn {
-    color: whitesmoke;
-    background-color: hsl(12, 88%, 59%);
+    color: variable.$body-background;
+    background-color: variable.$BrightRed;
     padding: 10px 20px;
     float: right;
     margin-right: 10%;
@@ -270,14 +269,14 @@ footer {
     border-radius: 20px;
 
     & :hover {
-        fill: hsl(0, 1, 0);
+        opacity: rgba(0, 0, 0, 0.729); 
     }
 }
 
 .copy-right {
     & P {
         text-align: right;
-        color: gray;
+        color: variable.$text-color;
         margin-right: 10rem;
         margin-top: -9rem;
         float: right;
