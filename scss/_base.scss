@@ -1,402 +1,397 @@
-@use "_variables" as variable;
+@import "_variables";
 
-body{
-    background-color:variable.$body-background ;
-    height: 100%;
-    font-family: 'Be Vietnam Pro',
-    sans-serif;
+body {
+  //   background-color: $body-background;
+  height: 100%;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 13px;
+  font-weight: $font-weight-normal;
+  background-image: url("../assets/images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  background-position: 50% 50%;
+  //   height: 100
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
 }
 #appbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 1rem 10%;
-    background-color: variable.$body-background;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 10%;
+  //   background-color: $body-background;
+  nav {
+    position: sticky;
+  }
+  padding: 4rem 10%;
 
-    & .hamburger-menu {
-        display: none;
-    }
+  .hamburger-menu {
+    display: none;
+  }
 }
 
 .manager-nav {
-    & ul {
-        display: flex;
-        gap: 2rem;
-    }
+  ul {
+    display: flex;
+    gap: 2rem;
+  }
 }
 
-
 #illustration-intro {
-    float: right;
-    padding: 4rem 9rem;
+  float: right;
+  padding: 4rem 9rem;
 }
 
 .header-bring {
-    margin: 4rem 9rem;
-    font-size: 25px;
-    height: 40rem;
+  margin: 4rem 9rem;
+  font-size: 25px;
+  height: 40rem;
 
+  h1 {
+    color: $h-color;
+    font-weight: $font-weight-bold;
+  }
 
-    & h1 {
-        color: variable.$h-color;
-        font-weight: 700;
-
-    }
-
-    & p {
-        margin-top: 2rem;
-        color: variable.$text-color;
-        font-size: 13px;
-    }
-
+  p {
+    margin-top: 2rem;
+    color: $text-color;
+    font-size: 13px;
+  }
 }
 .manage-different {
-    height: 20rem;
-    padding-left: 10%;
-    font-size: 30px;
-    padding-right: 60rem;
-    position: absolute;
+  height: 20rem;
+  padding-left: 10%;
+  font-size: 30px;
+  padding-right: 60rem;
+  position: absolute;
 
-    & h3 {
-        color: variable.$h-color;
-    }
+  h3 {
+    color: $h-color;
+  }
 
-    & p {
-        margin-top: 2rem;
-        color: variable.$text-color;
-        font-size: 13px;
-    }
+  p {
+    margin-top: 2rem;
+    color: $text-color;
+    font-size: 13px;
+  }
 }
-
-
 
 .manage-item-list {
-    padding-left: 60%;
-    padding-right: 15%;
+  padding-left: 60%;
+  padding-right: 15%;
 
-    & h5 {
-        color:variable.$h-color;
-        padding: 10px 0 0 4rem;
+  h5 {
+    color: $h-color;
+    padding: 10px 0 0 4rem;
+  }
 
-    }
-
-    & p {
-        margin-top: 1rem;
-        color: variable.$text-color;
-        padding-left: 4rem;
-        padding-bottom: 2rem;
-    }
+  p {
+    margin-top: 1rem;
+    color: $text-color;
+    padding-left: 4rem;
+    padding-bottom: 2rem;
+  }
 }
 
-
 .span {
-    background-color: variable.$BrightRed;
-    color: variable.$body-background;
-    padding: 10px 20px;
-    border-radius: 20px;
-    position: absolute;
-    margin-left: -2rem;
+  background-color: $BrightRed;
+  color: $body-background;
+  padding: 10px 20px;
+  border-radius: 20px;
+  position: absolute;
+  margin-left: -2rem;
 }
 
 .comments-header {
-    text-align: center;
-    font-size: 30px;
-    color: variable.$h-color;
-    margin-top: 8rem;
+  text-align: center;
+  font-size: 30px;
+  color: $h-color;
+  margin-top: 8rem;
 }
 
 .comments {
-    
-    text-align: center;
-    font-size: 30px;
-    color: variable.$h-color;
-    margin-top: 8rem;
-    display: flex;
+  text-align: center;
+  font-size: 30px;
+  color: $h-color;
+  margin-top: 8rem;
+  //   display: flex;
+  padding-inline: 2rem;
 
-    & h3 {
-        margin-bottom: 6rem;
+  h3 {
+    margin-bottom: 6rem;
+  }
+
+  h7 {
+    font-size: 13px;
+  }
+
+  p {
+    font-size: 13px;
+    color: $text-color;
+    margin-top: 2rem;
+  }
+
+  .ali {
+    background-color: $body-background;
+    border-radius: 20px;
+    padding: 50px;
+  }
+
+  .avatar-img {
+    display: block;
+    border-radius: 50%;
+    margin-top: -30%;
+    img {
+      width: 25%;
+      height: 100%;
+      margin-inline: auto;
     }
+    // transition: transformY(20%);
+  }
 
-    & h7 {
-        font-size: 13px;
-    }
+  .Anisha {
+    background-color: $body-background;
+    border-radius: 20px;
+    padding: 50px;
+    margin-right: 5rem;
+  }
 
-    & p {
-        font-size: 13px;
-        color: variable.$text-color;
-        margin-top: 2rem;
-    }
-
-    .ali {
-        background-color: variable.$body-background;
-        border-radius: 20px;
-        padding: 50px;
-
-    }
-
-    .avatar-img {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        border-radius: 20px;
-        transition: transformY(20%);
-    }
-
-    .Anisha {
-        background-color: variable.$body-background;
-        border-radius: 20px;
-        padding: 50px;
-        margin-right: 5rem;
-    }
-
-    .richard {
-        background-color: variable.$body-background;
-        border-radius: 20px;
-        padding: 50px;
-        margin-left: 5rem;
-    }
-
+  .richard {
+    background-color: $body-background;
+    border-radius: 20px;
+    padding: 50px;
+    margin-left: 5rem;
+  }
 }
 
-
-
+.btn.start-btn {
+  // border-radius: 20px;
+  padding: 10px 23px !important;
+  // color: $body-background;
+  // background-color: $BrightRed;
+  // margin-left: 48%;
+  // margin-top: 2rem;
+}
 .comments-btn {
-
-    .start-btn {
-        border-radius: 20px;
-        padding: 10px 23px;
-        color: variable.$body-background;
-        background-color: variable.$BrightRed;
-        margin-left: 48%;
-        margin-top: 2rem;
-    }
+  margin-top: 2rem;
 }
-
-
 
 .teamworks {
-    height: 10rem;
-    background-color: variable.$BrightRed;
-    color: variable.$body-background;
-    font-size: 25px;
-    font-weight: 700;
-    margin-top: 8rem;
+  height: 10rem;
+  background-color: $BrightRed;
+  color: $body-background;
+  font-size: 25px;
+  font-weight: $font-weight-bold;
+  margin-top: 8rem;
 
-    & h4 {
-        margin-top: 2.5rem;
-        position: absolute;
-        margin-left: 7rem;
-        margin-right: 65rem;
-        font-size: 30px;
-    }
+  h4 {
+    margin-top: 2.5rem;
+    position: absolute;
+    margin-left: 7rem;
+    margin-right: 65rem;
+    font-size: 30px;
+  }
 
-    .start-btn-white {
-        border-radius: 20px;
-        padding: 10px 23px;
-        color: variable.$BrightRed;
-        background-color: variable.$body-background;
-        font-size: 13px;
-        margin-left: 75rem;
-        margin-top: 3.5rem;
-    }
+  .start-btn-white {
+    border-radius: 20px;
+    padding: 10px 23px;
+    color: $BrightRed;
+    background-color: $body-background;
+    font-size: 13px;
+    margin-left: 75rem;
+    margin-top: 3.5rem;
+  }
 }
-
-
-
-
-
-
-
 
 footer {
-    background-color: variable.$VeryDarkBlue;
-    color: variable.$body-background;
-    font-weight: 300;
-    width: 100%;
+  background-color: $VeryDarkBlue;
+  color: $body-background;
+  font-weight: $font-weight-normal;
+  width: 100%;
 
-    & .logo {
-        margin-bottom: 50px;
-        color: variable.$body-background !important;
-        padding: 50px 10%;
-    }
+  .logo {
+    margin-bottom: 50px;
+    color: $body-background !important;
+    padding: 50px 10%;
+  }
 }
 
-
 .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 50px 10%;
+  margin-top: -50px;
 
+  :hover {
+    fill: $BrightRed;
+  }
+
+  .footer-content {
     display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 50px 10%;
-    margin-top: -50px;
-
-
-    & :hover {
-        fill: variable.$BrightRed;
-    }
-
-    .footer-content {
-        display: flex;
-    }
+  }
 }
 
 .part-one {
-    & li {
-        width: auto;
-        text-align: center;
-        padding: 7px;
-        position: relative;
-    }
+  li {
+    width: auto;
+    text-align: center;
+    padding: 7px;
+    position: relative;
+  }
 }
 
- .input {
-    background-color: variable.$body-background;
-    padding: 10px 30px;
-    border-radius: 20px;
-    float: right;
-    margin-right: 15%;
-    margin-top: -14rem;
+.input {
+  background-color: $body-background;
+  padding: 10px 30px;
+  border-radius: 20px;
+  float: right;
+  margin-right: 15%;
+  margin-top: -14rem;
 }
 
 .go-btn {
-    color: variable.$body-background;
-    background-color: variable.$BrightRed;
-    padding: 10px 20px;
-    float: right;
-    margin-right: 10%;
-    margin-top: -14rem;
-    border-radius: 20px;
+  color: $body-background;
+  background-color: $BrightRed;
+  padding: 10px 20px;
+  float: right;
+  margin-right: 10%;
+  margin-top: -14rem;
+  border-radius: 20px;
 
-    & :hover {
-        opacity: rgba(0, 0, 0, 0.729); 
-    }
+  :hover {
+    opacity: rgba(0, 0, 0, 0.729);
+  }
 }
 
 .copy-right {
-    & P {
-        text-align: right;
-        color: variable.$text-color;
-        margin-right: 10rem;
-        margin-top: -9rem;
-        float: right;
-    }
+  P {
+    text-align: right;
+    color: $text-color;
+    margin-right: 10rem;
+    margin-top: -9rem;
+    float: right;
+  }
 }
 
+@media screen and (min-width: 375px) {
+  #illustration-intro {
+    padding: 0;
+  }
 
+  .section {
+    margin: 1rem 10% !important;
+  }
 
-@media screen and (min-width: 375px) and (max-width: 440px) {
+  .logo {
+    margin: 15px 10px;
+  }
 
-    .section {
-        margin: 1rem 10% !important;
+  #icon-hamburger {
+    margin-top: 15px;
+    display: inline-block;
+  }
+
+  #appbar {
+    position: relative;
+
+    .btn.start-btn {
+      display: none;
     }
 
+    .hamburger-menu {
+      display: inline-block;
+    }
+  }
 
-    .logo {
-        margin: 15px 10px;
+  .start-btn {
+    display: none;
+  }
+
+  .manager-nav {
+    display: none;
+  }
+
+  .header-bring {
+    text-align: center;
+    height: auto;
+    justify-content: center;
+    flex-flow: column-reverse wrap;
+
+    p {
+      text-align: center;
     }
 
-    #icon-hamburger {
-        margin-top: 15px;
-        display: inline-block;
+    h3 {
+      text-align: center;
     }
 
-    #appbar {
-        position: relative;
-
-        & .start-btn {
-            display: none;
-        }
-
-        & .hamburger-menu {
-            display: inline-block;
-        }
+    h5 {
+      text-align: center;
     }
 
-    .start-btn {
-        display: none;
+    h7 {
+      text-align: center;
+    }
+  }
+
+  .manager-nav {
+    display: none;
+  }
+
+  footer {
+    flex-flow: column wrap;
+    text-align: center;
+    display: grid;
+
+    &.social {
+      flex-direction: column-reverse;
+      justify-content: center;
+      gap: 20px;
+      grid-area: form;
+      display: grid;
+      align-content: space-between;
+    }
+  }
+
+  .footer-nav {
+    display: block;
+    margin: 20px 0;
+    columns: 2;
+    gap: 10px;
+
+    a {
+      text-align: center;
+      text-decoration: none;
+      margin: 15px 0;
     }
 
-    .manager-nav {
-        display: none;
+    nav-list {
+      display: grid;
+      gap: 10px;
+      text-align: center;
     }
+  }
 
+  .input {
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    margin-inline: auto;
+  }
 
-
-
-    .header-bring {
-        text-align: center;
-        height: auto;
-        justify-content: center;
-        flex-flow: column-reverse wrap;
-
-        & p {
-            text-align: center;
-        }
-
-        & h3 {
-            text-align: center;
-        }
-
-        & h5 {
-            text-align: center;
-        }
-
-        & h7 {
-            text-align: center;
-        }
-    }
-
-    .manager-nav {
-        display: none;
-
-    }
-
-    footer {
-        flex-flow: column wrap;
-        text-align: center;
-        display: grid;
-
-        &.social {
-            flex-direction: column-reverse;
-            justify-content: center;
-            gap: 20px;
-            grid-area: form;
-            display: grid;
-            align-content: space-between;
-        }
-    }
-
-    & .footer-nav {
-        display: block;
-        margin: 20px 0;
-        columns: 2;
-        gap: 10px;
-
-        a {
-            text-align: center;
-            text-decoration: none;
-            margin: 15px 0;
-        }
-
-        & nav-list {
-            display: grid;
-            gap: 10px;
-            text-align: center;
-        }
-    }
-
-    & .input {
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 20px;
-        margin-inline: auto;
-    }
-
-    & .copy-right {
-        text-align: center;
-    }
-
-
-
+  .copy-right {
+    text-align: center;
+  }
 }
